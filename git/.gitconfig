@@ -1,0 +1,21 @@
+[core]
+	editor = vim
+[user]
+	name = tkrugg
+	email = tkrugg@live.fr
+[alias]
+	a = add
+	cia = commit -a
+	cim = commit -m
+	ci = commit
+	co = checkout
+	st = status
+	ss = status .
+	lf = ls-files
+[diff]
+	renames = true
+
+[color]
+	ui = true
+[github]
+	user = tkrugg
