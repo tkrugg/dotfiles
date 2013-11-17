@@ -1,0 +1,19 @@
+ set nocompatible               " be iMproved
+ filetype off                   " required!
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+"---------------------------------------
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'https://github.com/chriskempson/vim-tomorrow-theme'
+Bundle 'plasticboy/vim-markdown'
+
+
+
+
+"---------------------------------------
+filetype plugin indent on     " required

@@ -1,0 +1,9 @@
+" coloration
+ca darken colo Tomorrow-Night-Bright
+ca lighten colo Tomorrow
+" colo Tomorrow
+colo Tomorrow-Night-Bright
+
+
+ca tn tabnew
+
