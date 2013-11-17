@@ -105,4 +105,5 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 set t_Co=256
+set mouse=a
 so ~/.vimrc_custom

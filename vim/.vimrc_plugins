@@ -13,6 +13,54 @@ Bundle 'https://github.com/chriskempson/vim-tomorrow-theme'
 Bundle 'plasticboy/vim-markdown'
 
 
+Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "beyondmarc/opengl.vim"
+"Bundle "garbas/vim-snipmate"
+"Bundle "honza/snipmate-snippets"
+"Bundle "mattn/gist-vim"
+"Bundle "mattn/webapi-vim"
+"Bundle "php.vim"
+"Bundle "2072/PHP-Indenting-for-VIm"
+"Bundle "tomtom/tlib_vim"
+"Bundle "tpope/vim-abolish"
+"Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Townk/vim-autoclose'
+"Bundle 'atdt/vim-mediawiki'
+Bundle 'https://github.com/scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
+"Bundle 'groenewege/vim-less'
+Bundle 'kien/ctrlp.vim'
+Bundle 'majutsushi/tagbar'
+"Bundle 'mattn/zencoding-vim.git'
+"let g:user_zen_leader_key = '>'
+Bundle 'mutewinter/vim-css3-syntax'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'othree/html5.vim'
+"Bundle 'pangloss/vim-javascript'
+""Bundle 'robmiller/vim-movar'
+Bundle 'scrooloose/nerdcommenter'
+"Bundle 'suan/vim-instant-markdown'
+"Bundle 'tomasr/molokai'
+""Bundle 'tomtom/checksyntax_vim'
+Bundle 'tomtom/quickfixsigns_vim'
+"Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-surround'
+"Bundle 'vim-scripts/VOoM'
+""Bundle 'vim-scripts/RelOps'
+"Bundle 'kchmck/vim-coffee-script'
+"Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'godlygeek/tabular'
+""Bundle 'vim-scripts/indenthtml.vim'
+Bundle 'statianzo/vim-jade'
+Bundle 'tpope/vim-haml'
+Bundle "gregsexton/MatchTag"
+Bundle "vim-scripts/jQuery"
+Bundle "leafgarland/typescript-vim"
+Bundle "othree/javascript-libraries-syntax.vim"
+let g:used_javascript_libs = 'underscore,jquery,angularjs'
+Bundle "beyondwords/vim-twig"
+
+
 
 
 "---------------------------------------
