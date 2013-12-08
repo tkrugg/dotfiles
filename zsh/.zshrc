@@ -1,5 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+# aliases
+. $HOME/.zshrc_aliases
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -50,3 +52,4 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # calling z script
 . ~/dotfiles/z/z.sh
+#source ~/.rvm/scripts/rvm
