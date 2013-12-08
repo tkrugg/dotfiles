@@ -51,6 +51,7 @@ map <C-_> <plug>NERDCommenterToggle<CR>
 nmap <Space>F :NERDTreeFind<cr>
 nmap <Space>f :NERDTreeToggle<cr>
 nmap <Space>l :TagbarToggle<cr>
+set noballooneval
 
 "CtrlP
 
@@ -89,3 +90,7 @@ map <leader>c "+y<CR>:exe ":echo 'copied to clipboard'"<CR>
 map <leader>C "*y<CR>:exe ":echo 'copied from mouse clipboard'"<CR>
 map <leader>v "+p<CR>:exe ":echo 'pasted to clipboard'"<CR>
 map <leader>V "*p<CR>:exe ":echo 'pasted from mouse clipboard'"<CR>
+
+
+ca ~~ ~/.
+ca sorc source ~/.vimrc 
