@@ -66,11 +66,18 @@ set guioptions-=r  "remove right-hand scroll bar
 
 
 " AngularJS delimiters 
-imap §! {{{{  }}<Left><Left><Left>
-imap §§ [[ 
+"imap §! {{  }}<Left><Left><Left>
+"imap §§ [[ 
+imap ø {
+imap þ {
+imap ł [
+imap µ ]
+
+
 
 " remove extra spaces
 ca cls s/\s\s*/ /g
+
 
 " black hole register
 nmap <leader>dd "_dd
