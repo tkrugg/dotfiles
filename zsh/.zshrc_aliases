@@ -1,1 +1,7 @@
 alias pyserv="python -m SimpleHTTPServer 2020"
+alias tkrugg@ad="ssh -X tkrugg@ssh.alwaysdata.com" 
+alias tarx="tar -xzvf" 
+alias sorc=". ~/.zshrc"
+alias smg=". ~/Software/smartgithg-5_0_3/bin/smartgithg.sh"
+
+
