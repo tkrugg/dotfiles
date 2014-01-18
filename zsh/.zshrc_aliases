@@ -1,7 +1,51 @@
-alias pyserv="python -m SimpleHTTPServer 2020"
+alias pyserv="python -m SimpleHTTPServer"
 alias tkrugg@ad="ssh -X tkrugg@ssh.alwaysdata.com" 
 alias tarx="tar -xzvf" 
 alias sorc=". ~/.zshrc"
 alias smg=". ~/Software/smartgithg-5_0_3/bin/smartgithg.sh"
+alias cx="chmod +x"
+alias psg="ps -A | grep"
+alias erc="vim ~/.zshrc"
+alias ercal="vim ~/.zshrc_aliases"
+alias v="gvim"
+alias jsonval="python -m json.tool"
+alias less='/usr/share/vim/vim74/macros/less.sh'
+alias myip='wget -qO- http://ipecho.net/plain ; echo'
+ 
+function ccat()
+{
+  if [ ! -t 0 ];then
+    file=/dev/stdin
+  elif [ -f $1 ];then
+    file=$1
+  else
+    echo "Usage: $0 code.c"
+    echo "or e.g. head code.c|$0"
+    exit 1
+  fi
+  pygmentize -f terminal -g $file
+}
 
+
+function extract()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xvjf $1     ;;
+      *.tar.gz)    tar xvzf $1     ;;
+      *.bz2)       bunzip2 $1      ;;
+      *.rar)       unrar x $1      ;;
+      *.gz)        gunzip $1       ;;
+      *.tar)       tar xvf $1      ;;
+      *.tbz2)      tar xvjf $1     ;;
+      *.tgz)       tar xvzf $1     ;;
+      *.zip)       unzip $1        ;;
+      *.Z)         uncompress $1   ;;
+      *.7z)        7z x $1         ;;
+      *)           echo "'$1' cannot be extracted via >extract<" ;;
+    esac
+  else
+    echo "'$1' is not a valid file!"
+  fi
+}
 

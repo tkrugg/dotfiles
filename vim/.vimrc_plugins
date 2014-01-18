@@ -60,7 +60,7 @@ Bundle "othree/javascript-libraries-syntax.vim"
 let g:used_javascript_libs = 'underscore,jquery,angularjs'
 Bundle "beyondwords/vim-twig"
 
-
+Bundle "alfredodeza/jacinto.vim"
 
 
 "---------------------------------------

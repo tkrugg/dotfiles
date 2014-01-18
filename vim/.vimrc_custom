@@ -53,6 +53,8 @@ nmap <Space>f :NERDTreeToggle<cr>
 nmap <Space>l :TagbarToggle<cr>
 set noballooneval
 
+let NERDTreeIgnore = ['\.pyc$']
+
 "CtrlP
 
 let g:ctrlp_root_markers = ['.ctrlp']
@@ -70,7 +72,7 @@ set guioptions-=r  "remove right-hand scroll bar
 "imap §! {{  }}<Left><Left><Left>
 "imap §§ [[ 
 imap ø {
-imap þ {
+imap þ }
 imap ł [
 imap µ ]
 
@@ -94,3 +96,7 @@ map <leader>V "*p<CR>:exe ":echo 'pasted from mouse clipboard'"<CR>
 
 ca ~~ ~/.
 ca sorc source ~/.vimrc 
+
+ca wwrap set wrap linebreak nolist
+nmap <Down> gj
+nmap <Up> gk
