@@ -63,7 +63,7 @@ set wildignore+=*/out/**
 set wildignore+=*/vendor/**
 
 "Gvim
-set guioptions-=m  "remove menu bar
+"set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 
@@ -97,6 +97,10 @@ map <leader>V "*p<CR>:exe ":echo 'pasted from mouse clipboard'"<CR>
 ca ~~ ~/.
 ca sorc source ~/.vimrc 
 
-ca wwrap set wrap linebreak nolist
+ca wwrap set wrap linebreak nolist formatoptions=1
 nmap <Down> gj
 nmap <Up> gk
+imap æ {%%<Esc>i
+
+" zoom
+set lbr
