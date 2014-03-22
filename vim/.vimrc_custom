@@ -38,6 +38,16 @@ nmap <leader>gp :! git push<CR>
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gw :Gwrite<CR>
 
+"snipmate 
+let g:snips_trigger_key = '§'
+
+"tern
+nmap <leader>td :TernDefSplit<CR>
+nmap <leader>tdb :TernDocBrowse<CR>
+
+
+
+
 "folding
 ca fe set foldenable
 ca fmi set foldmethod=indent
@@ -104,3 +114,5 @@ imap æ {%%<Esc>i
 
 " zoom
 set lbr
+
+set completeopt-=preview

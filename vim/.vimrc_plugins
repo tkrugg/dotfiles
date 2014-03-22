@@ -14,16 +14,16 @@ Bundle 'plasticboy/vim-markdown'
 
 
 Bundle "MarcWeber/vim-addon-mw-utils"
-"Bundle "beyondmarc/opengl.vim"
-"Bundle "garbas/vim-snipmate"
-"Bundle "honza/snipmate-snippets"
+Bundle "tomtom/tlib_vim"
+Bundle "tkrugg/vim-snipmate"
+Bundle "tkrugg/vim-snippets"
 "Bundle "mattn/gist-vim"
 "Bundle "mattn/webapi-vim"
 "Bundle "php.vim"
 "Bundle "2072/PHP-Indenting-for-VIm"
-"Bundle "tomtom/tlib_vim"
 "Bundle "tpope/vim-abolish"
 "Bundle 'Lokaltog/vim-easymotion'
+"Bundle "beyondmarc/opengl.vim"
 Bundle 'Townk/vim-autoclose'
 "Bundle 'atdt/vim-mediawiki'
 Bundle 'https://github.com/scrooloose/nerdtree'
@@ -61,6 +61,8 @@ let g:used_javascript_libs = 'underscore,jquery,angularjs'
 Bundle "beyondwords/vim-twig"
 
 Bundle "alfredodeza/jacinto.vim"
+
+Bundle "marijnh/tern_for_vim"
 
 
 "---------------------------------------
