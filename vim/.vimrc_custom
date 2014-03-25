@@ -116,3 +116,6 @@ imap æ {%%<Esc>i
 set lbr
 
 set completeopt-=preview
+
+"font
+set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 12

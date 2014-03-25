@@ -63,6 +63,9 @@ Bundle "beyondwords/vim-twig"
 Bundle "alfredodeza/jacinto.vim"
 
 Bundle "marijnh/tern_for_vim"
+Bundle "bling/vim-airline"
+set laststatus=2
+let g:airline_powerline_fonts = 1
 
 
 "---------------------------------------
