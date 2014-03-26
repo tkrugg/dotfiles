@@ -56,8 +56,8 @@ Bundle 'tpope/vim-haml'
 Bundle "gregsexton/MatchTag"
 Bundle "vim-scripts/jQuery"
 Bundle "leafgarland/typescript-vim"
-Bundle "othree/javascript-libraries-syntax.vim"
-let g:used_javascript_libs = 'underscore,jquery,angularjs'
+Bundle "tkrugg/javascript-libraries-syntax.vim"
+let g:used_javascript_libs = 'underscore,jquery,angularjs,chai'
 Bundle "beyondwords/vim-twig"
 
 Bundle "alfredodeza/jacinto.vim"
