@@ -71,6 +71,11 @@ let g:ctrlp_root_markers = ['.ctrlp']
 " Ignore these directories
 set wildignore+=*/out/**
 set wildignore+=*/vendor/**
+set wildignore+=*/vendors/**
+set wildignore+=*/node_modules/**
+set wildignore+=*/components/**
+set wildignore+=*/bower_components/**
+
 
 "Gvim
 "set guioptions-=m  "remove menu bar
@@ -119,3 +124,4 @@ set completeopt-=preview
 
 "font
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 12
+set guifont=Inconsolata 12
