@@ -19,3 +19,5 @@
 	ui = true
 [github]
 	user = tkrugg
+[push]
+	default = simple
