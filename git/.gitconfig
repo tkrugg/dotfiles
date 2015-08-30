@@ -12,6 +12,8 @@
 	st = status
 	ss = status .
 	lf = ls-files
+	pushu = push -u
+	remotes = remote -v
 [diff]
 	renames = true
 
