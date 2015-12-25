@@ -1,7 +1,9 @@
 [core]
-	editor = vim
+	editor = mvim -f
+	excludesfile = /Users/ymammar/.gitignore_global
+	autocrlf = input
 [user]
-	name = tkrugg
+	name = Youcef Mammar
 	email = youcef.mammar@fr.ibm.com
 [alias]
 	a = add
@@ -12,10 +14,24 @@
 	st = status
 	ss = status .
 	lf = ls-files
-	pushu = push -u
+	pushu = push -u origin HEAD
+	pushf = push -f
 	remotes = remote -v
+	br = branch
+	brdiff = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative 
+	diffsrc = diff -- . ':!**/*.min.*'
+	lsf = ls-files
+	lsfm = ls-files -m --exclude-standard
+	lsfo = ls-files -o --exclude-standard 
+	sst = status --short
+	ciaa = commit -a --amend
+	ciam = commit -am
+	chp = cherry-pick
+	stashes = stash list
+
 [diff]
 	renames = true
+	tool = opendiff
 
 [color]
 	ui = true
@@ -23,3 +39,19 @@
 	user = tkrugg
 [push]
 	default = simple
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge]
+	tool = opendiff
+[hub]
+	host = github.ibm.com
+[credential]
+	helper = osxkeychain

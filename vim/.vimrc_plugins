@@ -1,72 +1,55 @@
- set nocompatible               " be iMproved
- filetype off                   " required!
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-"---------------------------------------
+filetype off                  " required
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'https://github.com/chriskempson/vim-tomorrow-theme'
-Bundle 'plasticboy/vim-markdown'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+source ~/dotfiles/vim/vimrc_plugins/vim-fugitive.vim
+"Plugin 'nanotech/jellybeans.vim'
+Plugin 'https://github.com/chriskempson/vim-tomorrow-theme'
+Plugin 'plasticboy/vim-markdown'
 
 
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "tkrugg/vim-snipmate"
-Bundle "tkrugg/vim-snippets"
-"Bundle "mattn/gist-vim"
-"Bundle "mattn/webapi-vim"
-"Bundle "php.vim"
-"Bundle "2072/PHP-Indenting-for-VIm"
-"Bundle "tpope/vim-abolish"
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle "beyondmarc/opengl.vim"
-Bundle 'Townk/vim-autoclose'
-"Bundle 'atdt/vim-mediawiki'
-Bundle 'https://github.com/scrooloose/nerdtree'
-Bundle 'ervandew/supertab'
-"Bundle 'groenewege/vim-less'
-Bundle 'kien/ctrlp.vim'
-Bundle 'majutsushi/tagbar'
-"Bundle 'mattn/zencoding-vim.git'
-"let g:user_zen_leader_key = '>'
-Bundle 'mutewinter/vim-css3-syntax'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'othree/html5.vim'
-"Bundle 'pangloss/vim-javascript'
-""Bundle 'robmiller/vim-movar'
-Bundle 'scrooloose/nerdcommenter'
-"Bundle 'suan/vim-instant-markdown'
-"Bundle 'tomasr/molokai'
-""Bundle 'tomtom/checksyntax_vim'
-Bundle 'tomtom/quickfixsigns_vim'
-"Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-surround'
-"Bundle 'vim-scripts/VOoM'
-""Bundle 'vim-scripts/RelOps'
-"Bundle 'kchmck/vim-coffee-script'
-"Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'godlygeek/tabular'
-""Bundle 'vim-scripts/indenthtml.vim'
-Bundle 'statianzo/vim-jade'
-Bundle 'tpope/vim-haml'
-Bundle "gregsexton/MatchTag"
-Bundle "vim-scripts/jQuery"
-Bundle "leafgarland/typescript-vim"
-Bundle "tkrugg/javascript-libraries-syntax.vim"
-let g:used_javascript_libs = 'underscore,jquery,angularjs,chai'
-Bundle "beyondwords/vim-twig"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'tkrugg/vim-snipmate'
+Plugin 'tkrugg/vim-snippets'
+Plugin 'Townk/vim-autoclose'
+Plugin 'https://github.com/scrooloose/nerdtree'
+source ~/dotfiles/vim/vimrc_plugins/nerdtree.vim
+Plugin 'ervandew/supertab'
+Plugin 'ctrlpvim/ctrlp.vim'
+source ~/dotfiles/vim/vimrc_plugins/ctrlp.vim
+Plugin 'majutsushi/tagbar'
+Plugin 'mutewinter/vim-css3-syntax'
+Plugin 'othree/html5.vim'
+Plugin 'scrooloose/nerdcommenter'
+source ~/dotfiles/vim/vimrc_plugins/nercommenter.vim
+Plugin 'tomtom/quickfixsigns_vim'
+Plugin 'tpope/vim-surround'
+Plugin 'godlygeek/tabular'
+Plugin 'statianzo/vim-jade'
+Plugin 'gregsexton/MatchTag'
+Plugin 'leafgarland/typescript-vim'
+"Plugin 'tkrugg/javascript-libraries-syntax.vim'
+"source ~/dotfiles/vim/vimrc_plugi""ns/javascript-libraries-syntax.vim
+Plugin 'alfredodeza/jacinto.vim'
+Plugin 'vim-scripts/JavaScript-Indent'
+Plugin 'jelera/vim-javascript-syntax'
 
-Bundle "alfredodeza/jacinto.vim"
+"Plugin 'marijnh/tern_for_vim'
+Plugin 'bling/vim-airline'
+source ~/dotfiles/vim/vimrc_plugins/vim-airline.vim
 
-Bundle "marijnh/tern_for_vim"
-Bundle "bling/vim-airline"
-set laststatus=2
-let g:airline_powerline_fonts = 1
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_key_list_previous_completion=['<S-TAB>']
+let g:ycm_key_list_select_completion=['<TAB>']
+
 
 
 "---------------------------------------
-filetype plugin indent on     " required
+call vundle#end()           " required
+filetype plugin indent on   " required

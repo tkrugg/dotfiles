@@ -25,29 +25,6 @@ nmap ú ]s
 nmap Ú [s
 nmap éz 1z=
 
-"Vundle
-ca BC BundleClean
-ca BI BundleInstall
-
-"fugitive
-nmap <leader>ga :! git add %; git commit -m "minor"; git push<CR>
-nmap <leader>gb :Gblame<CR>
-nmap <leader>gc :Gcommit<CR>
-nmap <leader>gd :Gdiff<CR>
-nmap <leader>gp :! git push<CR>
-nmap <leader>gs :Gstatus<CR>
-nmap <leader>gw :Gwrite<CR>
-
-"snipmate 
-let g:snips_trigger_key = '§'
-
-"tern
-nmap <leader>td :TernDefSplit<CR>
-nmap <leader>tdb :TernDocBrowse<CR>
-
-
-
-
 "folding
 ca fe set foldenable
 ca fmi set foldmethod=indent
@@ -56,25 +33,6 @@ ca fms set foldmethod=syntax
 
 "NerCommenter
 map <C-_> <plug>NERDCommenterToggle<CR>
-
-"NerdTree
-nmap <Space>F :NERDTreeFind<cr>
-nmap <Space>f :NERDTreeToggle<cr>
-nmap <Space>l :TagbarToggle<cr>
-set noballooneval
-
-let NERDTreeIgnore = ['\.pyc$']
-
-"CtrlP
-
-let g:ctrlp_root_markers = ['.ctrlp']
-" Ignore these directories
-set wildignore+=*/out/**
-set wildignore+=*/vendor/**
-set wildignore+=*/vendors/**
-set wildignore+=*/node_modules/**
-set wildignore+=*/components/**
-set wildignore+=*/bower_components/**
 
 
 "Gvim
@@ -91,16 +49,12 @@ imap þ }
 imap ł [
 imap µ ]
 
-
-
 " remove extra spaces
 ca cls s/\s\s*/ /g
-
 
 " black hole register
 nmap <leader>dd "_dd
 nmap <S-$> g_
-
 
 map <leader><leader>v "+p<CR>:exe ":echo 'pasted from system clipboard'"<CR>
 map <leader>c "+y<CR>:exe ":echo 'copied to clipboard'"<CR>
@@ -123,5 +77,28 @@ set lbr
 set completeopt-=preview
 
 "font
-set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 12
-set guifont=Inconsolata 12
+"set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 12
+"set guifont=Inconsolata 12
+set guifont=Hack\ Regular:h11
+
+
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+" size of a hard tabstop
+set tabstop=4
+
+" size of an "indent"
+set shiftwidth=4
+
+" a combination of spaces and tabs are used to simulate tab stops at a width
+" other than the (hard)tabstop
+set softtabstop=4
+" make "tab" insert indents instead of tabs at the beginning of a line
+set smarttab
+
+" always uses spaces instead of tab characters
+set noexpandtab
+
+" old habits die hard
+cmap w= w!
+cmap q= q!
+cmap wq= wq!

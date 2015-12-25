@@ -3,13 +3,7 @@
 
 set nocompatible
 
-so ~/.vimrc_plugins
-
-" TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
-" source ~/.vimrc.before if it exists.
-" if filereadable(expand("~/.vimrc.before"))
-"   source ~/.vimrc.before
-" endif
+so ~/dotfiles/vim/.vimrc_plugins
 
 " ================ General Config ====================
 
@@ -32,7 +26,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -86,7 +80,7 @@ set nofoldenable        "dont fold by default
 
 set wildmode=longest:full,full
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildignore+=*.o,*.obj,*~ "stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*
 set wildignore+=*DS_Store*
@@ -106,4 +100,4 @@ set sidescrolloff=15
 set sidescroll=1
 set t_Co=256
 set mouse=a
-so ~/.vimrc_custom
+so ~/dotfiles/vim/.vimrc_custom

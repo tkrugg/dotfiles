@@ -53,3 +53,6 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # calling z script
 . ~/dotfiles/z/z.sh
 #source ~/.rvm/scripts/rvm
+
+export NVM_DIR="/Users/ymammar/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

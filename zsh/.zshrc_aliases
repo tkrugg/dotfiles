@@ -1,16 +1,27 @@
-alias pyserv="python -m SimpleHTTPServer"
-alias tkrugg@ad="ssh -X tkrugg@ssh.alwaysdata.com" 
 alias tarx="tar -xzvf" 
 alias sorc=". ~/.zshrc"
-alias smg=". ~/Software/smartgithg-5_0_3/bin/smartgithg.sh"
 alias cx="chmod +x"
 alias psg="ps -A | grep"
 alias erc="vim ~/.zshrc"
 alias ercal="vim ~/.zshrc_aliases"
 alias v="gvim"
 alias jsonval="python -m json.tool"
-alias less='/usr/share/vim/vim74/macros/less.sh'
 alias myip='wget -qO- http://ipecho.net/plain ; echo'
+alias rmt="rmtrash"
+alias ackp="ack --flush --passthru --color"
+alias grepc="grep --color=always"
+alias git=hub
+alias ports='lsof -i -P | grep -i "listen"'
+alias vi='mvim'
+alias vip='mvim -c CtrlP &'
+
+eval "$(grunt --completion=zsh)"
+
+function mdo
+{
+  mdfind -onlyin . $1 | ackp $1
+}
+  
  
 function ccat()
 {
@@ -48,4 +59,8 @@ function extract()
     echo "'$1' is not a valid file!"
   fi
 }
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
 
+export PATH=$PATH":$HOME/bin" #include custom commands
+fpath=(/usr/local/share/zsh-completions $fpath)
