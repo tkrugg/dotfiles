@@ -1,4 +1,4 @@
-let g:ctrlp_map = ',,,'
+let g:ctrlp_map = ',,'
 let g:ctrlp_root_markers = ['.ctrlp']
 let g:ctrlp_cache_dir='/tmp/ctrlp/'   
 let ctrlp_show_hidden=1

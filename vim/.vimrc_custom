@@ -9,6 +9,10 @@ ca lighten colo Tomorrow
 " open a new tab
 ca tn tabnew
 nmap <c-t> :tabnew<CR>
+nmap <C-Tab> :tabnext<CR>
+nmap <C-S-Tab> :tabprev<CR>
+
+
 
 "open file under cursor in new tab
 map <leader>gf :tabe <cfile><CR> 
@@ -20,19 +24,16 @@ cmap w!! w ! sudo > /dev/null %
 vnoremap < <gv
 vnoremap > >gv
 
-"spelling correction faster
-nmap ú ]s
-nmap Ú [s
-nmap éz 1z=
+""spelling correction faster
+"nmap ú ]s
+"nmap Ú [s
+"nmap éz 1z=
 
 "folding
 ca fe set foldenable
 ca fmi set foldmethod=indent
 ca fmm set foldmethod=manual
 ca fms set foldmethod=syntax
-
-"NerCommenter
-map <C-_> <plug>NERDCommenterToggle<CR>
 
 
 "Gvim
@@ -41,13 +42,11 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 
 
-" AngularJS delimiters 
-"imap §! {{  }}<Left><Left><Left>
-"imap §§ [[ 
-imap ø {
-imap þ }
-imap ł [
-imap µ ]
+imap œ (
+imap π )
+imap Œ {
+imap ∏ }
+imap ¬ [
 
 " remove extra spaces
 ca cls s/\s\s*/ /g
@@ -65,11 +64,13 @@ map <leader>V "*p<CR>:exe ":echo 'pasted from mouse clipboard'"<CR>
 
 ca ~~ ~/.
 ca sorc source ~/.vimrc 
+ca eplug e ~/dotfiles/vim/.vimrc_plugins
+ca ecust e ~/dotfiles/vim/.vimrc_custom
 
 ca wwrap set wrap linebreak nolist formatoptions=1
 nmap <Down> gj
 nmap <Up> gk
-imap æ {%%<Esc>i
+"imap æ {%%<Esc>i
 
 " zoom
 set lbr
@@ -102,3 +103,5 @@ set noexpandtab
 cmap w= w!
 cmap q= q!
 cmap wq= wq!
+
+
