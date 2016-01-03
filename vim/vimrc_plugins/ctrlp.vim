@@ -1,6 +1,7 @@
-let g:ctrlp_map = ',,'
+let g:ctrlp_map = '??'
 let g:ctrlp_root_markers = ['.ctrlp']
 let g:ctrlp_cache_dir='/tmp/ctrlp/'   
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 let ctrlp_show_hidden=1
 " Ignore these directories
 set wildignore+=*/out/**

@@ -3,7 +3,6 @@
 
 set nocompatible
 
-so ~/dotfiles/vim/.vimrc_plugins
 
 " ================ General Config ====================
 
@@ -100,4 +99,9 @@ set sidescrolloff=15
 set sidescroll=1
 set t_Co=256
 set mouse=a
+
+" leader key
+let mapleader = ","
+
+so ~/dotfiles/vim/.vimrc_plugins
 so ~/dotfiles/vim/.vimrc_custom

@@ -1,3 +1,4 @@
+let mapleader = ","
 nmap <leader>ga :! git add %; git commit -m "minor"; git push<CR>
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gc :Gcommit<CR>

@@ -56,3 +56,14 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 export NVM_DIR="/Users/ymammar/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Use ~~ as the trigger sequence instead of the default **
+export FZF_COMPLETION_TRIGGER='??'
+
+# Options to fzf command
+export FZF_COMPLETION_OPTS='-i -x'
+export FZF_DEFAULT_OPTS='-i -x'
+complete -F _fzf_file_completion -o default -o bashdefault doge

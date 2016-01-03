@@ -53,6 +53,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'terryma/vim-expand-region'
 "---------------------------------------
 call vundle#end()           " required
 filetype plugin indent on   " required
@@ -71,3 +72,4 @@ source ~/dotfiles/vim/vimrc_plugins/vim-autoformat.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-session.vim
 source ~/dotfiles/vim/vimrc_plugins/syntastic.vim
 source ~/dotfiles/vim/vimrc_plugins/ctrlp.vim
+source ~/dotfiles/vim/vimrc_plugins/vim-expand-region.vim

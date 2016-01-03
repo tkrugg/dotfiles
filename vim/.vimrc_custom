@@ -1,6 +1,3 @@
-" leader key
-let mapleader = ","
-
 " coloration
 colo Tomorrow-Night-Bright
 ca darken colo Tomorrow-Night-Bright
