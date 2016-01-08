@@ -54,6 +54,8 @@ Plugin 'xolox/vim-session'
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'terryma/vim-expand-region'
+
+Plugin 'ntpeters/vim-better-whitespace'
 "---------------------------------------
 call vundle#end()           " required
 filetype plugin indent on   " required
@@ -65,6 +67,7 @@ source ~/dotfiles/vim/vimrc_plugins/nercommenter.vim
 source ~/dotfiles/vim/vimrc_plugins/emmet-vim.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-fugitive.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-snipmate.vim
+source ~/dotfiles/vim/vimrc_plugins/vim-better-whitespace.vim
 source ~/dotfiles/vim/vimrc_plugins/nerdtree.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-airline.vim
 source ~/dotfiles/vim/vimrc_plugins/YouCompleteMe.vim

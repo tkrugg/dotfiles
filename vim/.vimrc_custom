@@ -77,7 +77,7 @@ set completeopt-=preview
 "font
 "set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 12
 "set guifont=Inconsolata 12
-set guifont=Hack\ Regular:h11
+set guifont=Hack\ Regular:h12
 
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
