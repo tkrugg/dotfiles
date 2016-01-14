@@ -1,2 +1,2 @@
 let g:better_whitespace_verbosity=1
-autocmd BufWritePre * StripWhitespace
+let g:better_whitespace_filetypes_blacklist=['markdown', 'diff', 'gitcommit', 'unite', 'qf', 'help']
