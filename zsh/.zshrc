@@ -67,3 +67,5 @@ export FZF_COMPLETION_TRIGGER='??'
 export FZF_COMPLETION_OPTS='-i -x'
 export FZF_DEFAULT_OPTS='-i -x'
 complete -F _fzf_file_completion -o default -o bashdefault doge
+### Added by the Bluemix CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete

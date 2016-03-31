@@ -11,6 +11,8 @@ else
 fi
 local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
 local git_branch='$(git_prompt_status)%{$reset_color%}$(git_prompt_info)%{$reset_color%}'
+local nvm='%{$fg[red]%}nvm ‹$(node -v)›%{$reset_color%}'
+local npm='%{$fg[blue]%}npm ‹$(npm -v)›%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -26,4 +28,4 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
 
 PROMPT="
 ${user} ${pwd} %{$fg[green]%}➜ "
-RPROMPT="${return_code} ${git_branch} ${rvm}"
+RPROMPT="${return_code} ${git_branch} ${rvm} ${nvm} ${npm}"

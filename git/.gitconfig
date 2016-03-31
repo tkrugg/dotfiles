@@ -28,6 +28,7 @@
 	ciam = commit -am
 	chp = cherry-pick
 	stashes = stash list
+	brs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 
 [diff]
 	renames = true
