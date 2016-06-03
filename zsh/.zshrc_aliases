@@ -1,4 +1,6 @@
-alias tarx="tar -xzvf" 
+setopt extended_glob
+
+alias tarx="tar -xzvf"
 alias sorc=". ~/.zshrc"
 alias cx="chmod +x"
 alias psg="ps -A | grep"
@@ -21,8 +23,13 @@ function mdo
 {
   mdfind -onlyin . $1 | ackp $1
 }
-  
- 
+
+realpath() {
+	for f in "$@"; do
+		echo ${f}(:A);
+	done
+}
+
 function ccat()
 {
   if [ ! -t 0 ];then

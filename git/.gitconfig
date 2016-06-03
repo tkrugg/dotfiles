@@ -29,6 +29,10 @@
 	chp = cherry-pick
 	stashes = stash list
 	brs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+	lol = log --oneline --graph
+	lom = log --oneline --graph master..HEAD
+	lo = log --oneline --graph master..HEAD
+	bro = browse
 
 [diff]
 	renames = true

@@ -43,7 +43,7 @@ ZSH_THEME="tkrugg"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git grunt vundle dircycle wd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,6 +66,8 @@ export FZF_COMPLETION_TRIGGER='??'
 # Options to fzf command
 export FZF_COMPLETION_OPTS='-i -x'
 export FZF_DEFAULT_OPTS='-i -x'
-complete -F _fzf_file_completion -o default -o bashdefault doge
 ### Added by the Bluemix CLI
 source /usr/local/Bluemix/bx/zsh_autocomplete
+
+# added by travis gem
+[ -f /Users/ymammar/.travis/travis.sh ] && source /Users/ymammar/.travis/travis.sh

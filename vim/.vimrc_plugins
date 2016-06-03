@@ -35,10 +35,13 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'alfredodeza/jacinto.vim'
-Plugin 'vim-scripts/JavaScript-Indent'
+"Plugin 'vim-scripts/JavaScript-Indent'
+"Plugin 'gavocanov/vim-js-indent'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'moll/vim-node'
 Plugin 'elzr/vim-json'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'derekwyatt/vim-scala'
 
 "Plugin 'marijnh/tern_for_vim'
 Plugin 'bling/vim-airline'
@@ -56,6 +59,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'terryma/vim-expand-region'
 
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'keith/swift.vim'
 "---------------------------------------
 call vundle#end()           " required
 filetype plugin indent on   " required
@@ -68,6 +72,8 @@ source ~/dotfiles/vim/vimrc_plugins/emmet-vim.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-fugitive.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-snipmate.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-better-whitespace.vim
+source ~/dotfiles/vim/vimrc_plugins/vim-jsbeautify.vim
+source ~/dotfiles/vim/vimrc_plugins/vim-swift.vim
 source ~/dotfiles/vim/vimrc_plugins/nerdtree.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-airline.vim
 source ~/dotfiles/vim/vimrc_plugins/YouCompleteMe.vim
