@@ -66,8 +66,6 @@ export FZF_COMPLETION_TRIGGER='??'
 # Options to fzf command
 export FZF_COMPLETION_OPTS='-i -x'
 export FZF_DEFAULT_OPTS='-i -x'
-### Added by the Bluemix CLI
-source /usr/local/Bluemix/bx/zsh_autocomplete
 
 # added by travis gem
 [ -f /Users/ymammar/.travis/travis.sh ] && source /Users/ymammar/.travis/travis.sh
