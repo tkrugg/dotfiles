@@ -100,5 +100,5 @@ set noexpandtab
 cmap w= w!
 cmap q= q!
 cmap wq= wq!
-
-
+set tags=./tags,tags;/
+set ignorecase

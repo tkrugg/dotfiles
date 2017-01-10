@@ -1,1 +1,2 @@
-let g:snips_trigger_key = '§'
+let g:snips_trigger_key = '+'
+

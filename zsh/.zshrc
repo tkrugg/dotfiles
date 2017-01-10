@@ -54,10 +54,10 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 . ~/dotfiles/z/z.sh
 #source ~/.rvm/scripts/rvm
 
-export NVM_DIR="/Users/ymammar/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Use ~~ as the trigger sequence instead of the default **
@@ -66,6 +66,3 @@ export FZF_COMPLETION_TRIGGER='??'
 # Options to fzf command
 export FZF_COMPLETION_OPTS='-i -x'
 export FZF_DEFAULT_OPTS='-i -x'
-
-# added by travis gem
-[ -f /Users/ymammar/.travis/travis.sh ] && source /Users/ymammar/.travis/travis.sh

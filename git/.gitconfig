@@ -1,10 +1,10 @@
 [core]
 	editor = mvim -f
-	excludesfile = /Users/ymammar/.gitignore_global
+	excludesfile = /Users/ninja/.gitignore_global
 	autocrlf = input
 [user]
 	name = Youcef Mammar
-	email = youcef.mammar@fr.ibm.com
+	email = y.mammar.dev@gmail.com
 [alias]
 	a = add
 	cia = commit -a
@@ -60,3 +60,5 @@
 	host = github.ibm.com
 [credential]
 	helper = osxkeychain
+[commit]
+	template = /Users/ninja/.stCommitMsg

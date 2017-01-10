@@ -16,3 +16,6 @@ set wildignore+=*/node_modules_*/**
 set wildignore+=*/.idea/**
 set wildignore+=*/components/**
 set wildignore+=*/bower_components/**
+
+nmap <D-e> :CtrlPMRU<CR>
+nmap <leader><D-e> :CtrlPBuffer<CR>

@@ -42,11 +42,24 @@ Plugin 'moll/vim-node'
 Plugin 'elzr/vim-json'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'jbgutierrez/vim-babel'
+Plugin 'mattn/webapi-vim'
+Plugin 'maksimr/vim-jsbeautify'
+source ~/dotfiles/vim/vimrc_plugins/vim-jsbeautify.vim
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
-"Plugin 'marijnh/tern_for_vim'
+Plugin 'marijnh/tern_for_vim'
 Plugin 'bling/vim-airline'
 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
+autocmd FileType html,css EmmetInstall
+Plugin 'moll/vim-node'
+"find . -type f -iregex ".*\.js$" -not -path "./node_modules/*" -exec jsctags {} -f \; | sed '/^$/d' | sort > tags
+"Plugin 'Valloric/YouCompleteMe'
+"let g:ycm_key_list_previous_completion=['<S-TAB>']
+"let g:ycm_key_list_select_completion=['<TAB>']
 
 Plugin 'Chiel92/vim-autoformat'
 

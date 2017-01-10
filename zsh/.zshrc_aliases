@@ -13,7 +13,8 @@ alias myip='wget -qO- http://ipecho.net/plain ; echo'
 alias rmt="rmtrash"
 alias ackp="ack --flush --passthru --color"
 alias grepc="grep --color=always"
-alias git=hub
+#alias git=hub
+function git() { hub $@; }
 alias ports='lsof -i -P | grep -i "listen"'
 alias vi='mvim'
 alias vip='mvim -c CtrlP &'
