@@ -14,16 +14,21 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'danro/rename.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'tkrugg/vim-snipmate'
-Plugin 'tkrugg/vim-snippets'
+"Plugin 'SirVer/ultisnips'
+"let g:UltiSnipsExpandTrigger="<C-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsSnippetsDir="~/.vim/ultisnips"
+"imap gz <C-j>
+"Plugin 'tkrugg/vim-snipmate'
+"Plugin 'tkrugg/vim-snippets'
 Plugin 'Townk/vim-autoclose'
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'mutewinter/vim-css3-syntax'
+Plugin 'hail2u/vim-css3-syntax'
 Plugin 'othree/html5.vim'
-Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tomtom/quickfixsigns_vim'
 Plugin 'tpope/vim-surround'
@@ -38,9 +43,7 @@ Plugin 'alfredodeza/jacinto.vim'
 "Plugin 'vim-scripts/JavaScript-Indent'
 "Plugin 'gavocanov/vim-js-indent'
 Plugin 'jelera/vim-javascript-syntax'
-Plugin 'moll/vim-node'
 Plugin 'elzr/vim-json'
-Plugin 'maksimr/vim-jsbeautify'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'jbgutierrez/vim-babel'
 Plugin 'mattn/webapi-vim'
@@ -52,7 +55,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'bling/vim-airline'
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 autocmd FileType html,css EmmetInstall
 Plugin 'moll/vim-node'
@@ -72,6 +75,8 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'terryma/vim-expand-region'
 
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'mileszs/ack.vim'
+
 Plugin 'keith/swift.vim'
 "---------------------------------------
 call vundle#end()           " required
@@ -83,7 +88,7 @@ filetype plugin indent on   " required
 source ~/dotfiles/vim/vimrc_plugins/nercommenter.vim
 source ~/dotfiles/vim/vimrc_plugins/emmet-vim.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-fugitive.vim
-source ~/dotfiles/vim/vimrc_plugins/vim-snipmate.vim
+"source ~/dotfiles/vim/vimrc_plugins/vim-snipmate.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-better-whitespace.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-jsbeautify.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-swift.vim
@@ -95,3 +100,4 @@ source ~/dotfiles/vim/vimrc_plugins/vim-session.vim
 source ~/dotfiles/vim/vimrc_plugins/syntastic.vim
 source ~/dotfiles/vim/vimrc_plugins/ctrlp.vim
 source ~/dotfiles/vim/vimrc_plugins/vim-expand-region.vim
+source ~/dotfiles/vim/vimrc_plugins/ack.vim

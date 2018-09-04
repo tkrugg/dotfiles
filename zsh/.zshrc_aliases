@@ -18,8 +18,15 @@ function git() { hub $@; }
 alias ports='lsof -i -P | grep -i "listen"'
 alias vi='mvim'
 alias vip='mvim -c CtrlP &'
-
-eval "$(grunt --completion=zsh)"
+alias envass='.  ~/alkemics/envs/ass-env/bin/activate'
+alias envcore='.  ~/alkemics/envs/core-env/bin/activate'
+alias envnotif='.  ~/alkemics/envs/notif-env/bin/activate'
+alias envetl='.  ~/alkemics/envs/etl-env/bin/activate'
+alias envmerch='.  ~/alkemics/envs/merch-env/bin/activate'
+alias nr='npm run'
+alias nl='npm run lint'
+alias nm='npm run test'
+#eval "$(grunt --completion=zsh)"
 
 function mdo
 {
@@ -70,6 +77,28 @@ function extract()
 }
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
 
 export PATH=$PATH":$HOME/bin" #include custom commands
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+alias lockma="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+function acurl {
+  if [ -z "$TOKEN" ]; then
+    (echo Fetching token >&2)
+    TOKEN=$(curl -s 'https://apis.alkemics.com/auth/v1/user/login' --data-binary '{"username":"ymammar@alkemics.com","password":"Qwen4xso","grant_type":"password","origin":"dashboard_stream","platform":0}' --compressed | jq .access_token | sed s/\"//g)
+    (echo Token acquired >&2)
+  fi
+
+  curl $@ -H "Authorization: Bearer $TOKEN";
+}
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+function fabs()
+{
+   echo $(cd $(dirname "$1") && pwd -P)/$(basename "$1")
+}

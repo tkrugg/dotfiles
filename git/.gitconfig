@@ -1,23 +1,25 @@
 [core]
 	editor = mvim -f
-	excludesfile = /Users/ninja/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [user]
 	name = Youcef Mammar
-	email = y.mammar.dev@gmail.com
+	email = ymammar@alkemics.com
 [alias]
 	a = add
 	cia = commit -a
 	cim = commit -m
 	ci = commit
 	co = checkout
-	st = status
+  re = rebase
+  st = status --untracked-files=no
 	ss = status .
 	lf = ls-files
 	pushu = push -u origin HEAD
 	pushf = push -f
 	remotes = remote -v
 	br = branch
+  brc = branch --sort=committerdate
 	brdiff = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative 
 	diffsrc = diff -- . ':!**/*.min.*'
 	lsf = ls-files
@@ -25,6 +27,7 @@
 	lsfo = ls-files -o --exclude-standard 
 	sst = status --short
 	ciaa = commit -a --amend
+	ciaae = commit -a --amend --no-edit
 	ciam = commit -am
 	chp = cherry-pick
 	stashes = stash list
@@ -33,6 +36,13 @@
 	lom = log --oneline --graph master..HEAD
 	lo = log --oneline --graph master..HEAD
 	bro = browse
+	comp = compare
+  rebis = rebase -i staging
+  rebc = rebase --continue
+  pullreb = pull upstream staging --rebase
+  pullup = pull upstream HEAD
+  hop = pull upstream HEAD --rebase
+  bis = bisect
 
 [diff]
 	renames = true
@@ -57,8 +67,8 @@
 [merge]
 	tool = opendiff
 [hub]
-	host = github.ibm.com
+	host = github.com
 [credential]
 	helper = osxkeychain
 [commit]
-	template = /Users/ninja/.stCommitMsg
+	template = ~/.stCommitMsg
